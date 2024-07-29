@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Projects</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: #fb0606;
+}
+.name{
+    position: fixed;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #0592f637, #f225057e, #0303f867, #c3a8c3);
+    background-size: 800% 800%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+}
+h3{
+    height: 70px;
+    width: 100px;
+    text-align: right;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.8);
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    padding: 14px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #00FF7F;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00cc66;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+iframe {
+    width: 70%;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.animated-text {
+    display: inline-block;
+    animation: textAnimation 3s ease-in-out infinite;
+}
+
+@keyframes textAnimation {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Contact Form */
+#contact{
+    border: 3px solid lightseagreen;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1abc9c;
+    color:rgb(248, 242, 242);
+}
+button:hover {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fe0808;
+    color:rgb(248, 242, 242);
+}
+.img1{
+    border-radius: 20px;
+    background-color: white;
+    transition: 2s ease-in-out;
+}
+.footer1{
+    background-color: rgb(200, 198, 194);
+    border: 3px solid red;
+    text-align: center;
+    color: crimson;
+}    
+.footer1:hover{
+    background-color: rgb(86, 230, 232);
+    border: 3px solid rgb(75, 62, 218);
+    text-align: center;
+    color: wheat;
+}    
+</style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="name">
+        <h2>Created by WALEED MAQSOOD:</h2>
+        <br><img src="./waleed.jpg" height="70px" width="100px" style="border-radius: 200px;" alt="">
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="animated-text">Welcome to My Projects</h1>
+        <p class="animated-text">Explore my work and enjoy the interactive animations.</p>
+    </section>
+    <section id="projects">
+        <h2 class="animated-text">Projects</h2>
+        <div class="project">
+            <h3 class="animated-text">Netflix Clone</h3>
+<iframe src="https://www.filmyzilla.bz/category/Bollywood-full-movies.html" frameborder="0"> waleed</iframe>
+        </div>
+        <div class="project">
+            <h3 class="animated-text">Personal Webpage with Blog</h3>
+            <iframe src="file:///C:/Users/Rana%20Waleed/Desktop/New%20folder/index3.html" frameborder="0"></iframe>
+        </div>
+        <div class="project">
+            <h3 class="animated-text">Another Project</h3>
+            <iframe src="file:///C:/Users/Rana%20Waleed/Desktop/New%20folder/project2.html" frameborder="0"></iframe>
+        </div>
+        <div class="project">
+            <h3 class="animated-text">Another Project</h3>
+            <iframe src="file:///D:/project/index.html" frameborder="0"></iframe>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="animated-text">Contact Me</h2>
+        <p class="animated-text">Feel free to reach out for collaborations or inquiries.</p>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer1">
+        <div class="container">
+            <p>&copy; Created by WALEED MAQSOOD <img src="../../images/waleed.jpg" class="img1" alt="image waleed" height="40px" width="50px"></p>
+        </div>
+    </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const animatedTextElements = document.querySelectorAll('.animated-text');
+
+    animatedTextElements.forEach(element => {
+        element.classList.add('fade-in');
+    });
+});
+
+</script>
+</body>
+</html>
